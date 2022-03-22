@@ -98,6 +98,7 @@ indirect enum Node<Screen, V: View>: View {
       screenView
         .background(
           NavigationLink(destination: next, isActive: pushBinding, label: EmptyView.init)
+            .isDetailLinkiOS()
             .hidden()
         )
         .sheet(
@@ -115,6 +116,7 @@ indirect enum Node<Screen, V: View>: View {
       screenView
         .background(
           NavigationLink(destination: next, isActive: pushBinding, label: EmptyView.init)
+            .isDetailLinkiOS()
             .hidden()
         )
         .present(
